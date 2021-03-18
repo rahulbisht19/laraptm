@@ -1,0 +1,13 @@
+{
+    "name": "rahulbisht/laraptm",
+    "description": "lara ptn mod",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rahul bisht",
+            "email": "rahulbisht2007@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

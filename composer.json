@@ -2,6 +2,7 @@
     "name": "rahulbisht/laraptm",
     "description": "lara ptn mod",
     "license": "MIT",
+    "keywords": ["paytm wallet", "laravel"],
     "authors": [
         {
             "name": "rahul bisht",
@@ -9,5 +10,25 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": ">=5.0",
+        "illuminate/contracts": ">=5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rahul\\laraptm\\": "src/"
+        }
+    },
+     "extra": {        
+        "laravel": {
+            "providers": [
+                "Rahul\\laraptm\\PaytmWalletServiceProvider"
+            ],
+            "aliases": {
+                "PaytmWallet": "Rahul\\laraptm\\Facades\\PaytmWallet"
+            }
+        }
+    }
 }
+
